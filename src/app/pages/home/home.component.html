@@ -1,0 +1,89 @@
+<!-- Slider home -->
+<app-slider-home></app-slider-home>
+
+<app-services-work></app-services-work>
+
+<section class="sec-divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gt-acerca">
+  <div class="container">
+    <div class="row row-acerca">
+      <div class="col-md-6 text wow animate__animated animate__zoomInLeft">
+        <h2>Acerca de mi</h2>
+        <img src="/assets/img/delimiter.png" alt="">
+        <p>Ingeniero de Sistemas, con más de 8 años de experiencia en el sector informático, cuento con conocimiento en el área de desarrollo web, tecnologías de JavaScript, MONGOBD, FIREBASE, MYSQL, JSON, GIT...</p>
+        <a href="/sobre-mi">Sobre mi</a>
+      </div>
+      <div class="col-md-6 image wow animate__animated animate__zoomInRight">
+        <img src="/assets/img/code.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gt-sec-comment">
+  <div class="container">
+    <div class="row row-comment">
+      <div class="col-md-5 wow animate__animated animate__zoomIn">
+        <div class="cont-img">
+          <img src="/assets/img/me.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-7 wow animate__animated animate__fadeInRight">
+        <h2>Desarrollo de Software</h2>
+        <img src="/assets/img/delimiter.png" alt="">
+        <p>Desarrollos de software a la medida que nos permitieron crecer, diseñar, desplegar e implementar compatibilidad de software.
+          Estos proyectos ayudaron a las organizaciones a ajustar sus funciones y tener un mejor desempeño, instruyendo a sus empleados a dejar de realizar tareas manuales y procesar la información de forma tecnológicamente independiente.
+        </p>
+        <a href="/servicios">Leer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gt-projects">
+  <div class="container">
+    <div class="row title">
+      <div class="col-12 text-center wow animate__animated animate__bounceIn">
+        <h2>!Participación en proyectos¡</h2>
+        <img src="/assets/img/delimiter.png" alt="">
+        <p>Estos son algunos de los proyectos más relevantes y recientes en los que he participado de manera individual como grupal!</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div 
+      *ngFor="let project of projects | slice:0:3; let i = index"
+        class="col-md-4 wow animate__animated animate__fadeInLeft animate__delay-1s">
+        <div class="card-project">
+          <div class="image">
+            <img src="https://files.gtsoftweb.com/images/{{project.imagen}}" alt="">
+          </div>
+          <h3>{{project.nombre}}</h3>
+          <p>{{project.descripcion | slice:0:150}}{{ (project.descripcion.length > 150)? '...':'' }}</p>
+          <button (click)="navigateDetail(project.id)">Ver Proyecto</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<app-form-contact></app-form-contact>

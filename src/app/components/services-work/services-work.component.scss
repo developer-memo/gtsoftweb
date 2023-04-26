@@ -1,0 +1,32 @@
+@import '../../../scss/globals.scss';
+
+#gt-services {
+  background-color: $dark-one;
+  padding: 60px 0;
+  .title {
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    img {
+      width: 110px;
+      margin: 10px auto;
+    }
+    p {
+      color: $dark-three;
+    }
+  }
+  .gt-card {
+    text-align: center;
+    h3 {
+      color: $white;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 20px 0;
+      margin: 0;
+    }
+    p {
+      color: $dark-three;
+    }
+  }
+}

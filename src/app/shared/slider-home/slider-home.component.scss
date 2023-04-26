@@ -1,0 +1,57 @@
+@import '../../../scss/globals.scss';
+
+#gt-slider-home {
+  .item-1 {
+    background-image: url('../../../assets/img/slider2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .item-2 {
+    background-image: url('../../../assets/img/slider2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-attachment: fixed;
+  }
+  .content-slider {
+    color: $white;
+    width: 430px;
+    margin-right: 13%;
+    @media( max-width:768px ){
+      width: 630px;
+      padding: 0 15%;
+      margin: auto;
+    }
+    @media(max-width:560px){
+      width: 460px;
+    }
+    @media(min-width:1780px){
+      width: 580px;
+    }
+    span {
+      color: $red-one;
+      font-weight: 700;
+    }
+    h1, h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3rem;
+      @media( max-width:768px ){
+        font-size: 1.5rem;
+      }
+    }
+    a {
+      @include btn-principal;
+    }
+  }
+}

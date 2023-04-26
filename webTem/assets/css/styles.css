@@ -1,0 +1,54 @@
+#body-temp {
+  background-image: url('../img/bg-temp.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  color:  white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.cont-text-temp {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100%;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.cont-text-temp p {
+  font-size: 1.6rem;
+  width: 590px;
+  margin: auto;
+}
+.cont-text-temp p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+footer {
+  position: absolute;
+  bottom: 25px;
+}
+footer p {
+  font-size: 1rem !important;
+}
+
+@media( max-width: 768px ){
+  .cont-text-temp {
+    padding: 25px;
+  }
+  .cont-text-temp p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .cont-text-temp p br {
+    display: none;
+  }
+}

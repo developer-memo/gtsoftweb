@@ -1,0 +1,79 @@
+@import '../../../scss/globals.scss';
+
+#gt-projects {
+  background-image: url('../../../assets/img/slider2.jpg');
+  background-position: center -91px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: $white;
+  .capa {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .gt-title-pages {
+    position: relative;
+    margin: auto;
+    h1 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    img {
+      width: 110px;
+      margin: 10px auto;
+    }
+    p {
+      color: $dark-three;
+    }
+  }
+}
+
+#gt-projects-detail {
+  background-color: $dark-one;
+  padding: 70px 0;
+  .back {
+    color: $white;
+    cursor: pointer;
+  }
+  .row-detail {
+    .image {
+      align-items: center;
+      width: 500px;
+      margin: auto;
+      padding-bottom: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      h2, h5 {
+        color: $white;
+        text-transform: uppercase;
+      }
+      p {
+        color: $dark-three;
+        text-align: justify;
+      }
+      a {
+        @include btn-principal;
+      }
+    }
+    .span-skill {
+      background-color: #2735b5;
+      color: $white;
+      padding: 3px 9px;
+      font-size: 13px;
+      border-radius: 20px;
+      margin-right: 5px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+}

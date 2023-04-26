@@ -1,0 +1,101 @@
+<section id="gt-form-contact">
+  <div class="container">
+    <div class="row row-items">
+      <div class="col-md-6 text-contact wow animate__animated animate__fadeInLeft">
+        <h2>Permíteme darte asesoría</h2>
+        <img src="../../../assets/img/delimiter.png" alt="">
+        <p>Para mi es un gusto poder escucharte y dar apoyo y asesoría en tus propuestas o ideas que quieres plasmar, permíteme ser parte de tu proyecto u organización.</p>
+      </div>
+      <div class="col-md-6 form-contact wow animate__animated animate__fadeInRight">
+        <form [formGroup]="formContact" (submit)="submitFormContact()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text"  formControlName="name" class="form-control" placeholder="Tu ¡nombre!">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" formControlName="email" class="form-control" placeholder="¡Tu Email!">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="number" formControlName="phone" class="form-control" placeholder="¡Tu Teléfono!">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text"  formControlName="subject" class="form-control" placeholder="Tu ¡Asunto!">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <textarea formControlName="comment" class="form-control" rows="3">¡Comentario!</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button type="submit" id="btnSend" [disabled]="!formContact.valid">Enviar info</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="gt-red-socials row gap-5 wow animate__animated animate__fadeInDown">
+      <div class="col-md-2 social social-facebook">
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <h3>Facebook</h3>
+          <a type="button" class="btn" href="https://www.facebook.com/guillermo.tobon.39/" target="_blank">
+            Go! <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 social social-instagram">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Instagram</h3>
+          <a type="button" class="btn" href="https://www.instagram.com/memot18/" target="_blank">
+            Go! <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 social social-twitter">
+        <div>
+          <i class="fa-brands fa-twitter"></i>
+          <h3>Twitter</h3>
+          <a type="button" class="btn" href="https://twitter.com/memot18" target="_blank">
+            Go! <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 social social-linkedin">
+        <div>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <h3>LinkedIn</h3>
+          <a type="button" class="btn" href="https://www.linkedin.com/in/guillermotobondeveloper/" target="_blank">
+            Go! <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 social social-whatsapp">
+        <div>
+          <i class="fa-brands fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <a type="button" class="btn" href="https://wa.me/573165347875?text=Hola+GtSoftWeb+¡Estoy+interesado+en+tus+servicios!" target="_blank">
+            Go! <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

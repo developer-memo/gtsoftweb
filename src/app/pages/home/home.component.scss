@@ -1,0 +1,113 @@
+@import '../../../scss/globals.scss';
+
+#gt-acerca {
+  background-color: $dark-one;
+  padding: 90px 0;
+  .row-acerca {
+    align-items: center;
+    .text {
+      h2 {
+        color: $white;
+        text-transform: uppercase;
+      }
+      p {
+        color: $dark-three;
+      }
+      a {
+        @include btn-principal;
+      }
+    }
+    .image {
+      img {
+        border-top-left-radius: 23%;
+        border-bottom-right-radius: 23%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sec-divider {
+  @include dividerPrimary;
+}
+
+.gt-sec-comment {
+  background-color: $dark-one;
+  padding: 50px 0;
+  .row-comment {
+    align-items: center;
+    .cont-img {
+      width: 100%;
+      height: 434px;
+      overflow: hidden;
+      // border-radius: 136% 50% 76% 71%/60% 106% 32% 32%;
+      border-top-left-radius: 23%;
+      border-bottom-right-radius: 23%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    p {
+      color: $dark-three;
+    }
+    a {
+      @include btn-principal;
+    }
+  }
+}
+
+#gt-projects {
+  background-image: url('../../../assets/img/slider1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 70px 0;
+  .title {
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    p {
+      color: $dark-three;
+      padding: 0 15%;
+    }
+  }
+  .card-project {
+    border: 1px solid $red-one;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    width: 300px;
+    margin: auto;
+    .image {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      color: $white;
+      padding: 20px 10px;
+    }
+    p {
+      color: $dark-three;
+      font-size: 13px;
+      padding: 0 10px
+    }
+    button {
+      @include btn-secundary;
+    }
+  }
+}

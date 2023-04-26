@@ -1,0 +1,69 @@
+@import '../../../scss/globals.scss';
+
+
+.gt-logs-footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 50px;
+    overflow: hidden;
+    margin: auto 30px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+  }
+}
+
+hr {
+  border-bottom: 1px solid white;
+}
+
+#gt-footer {
+  background-color: $black;
+  padding: 50px 0;
+
+  h3 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  p {
+    color: $dark-three;
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  a {
+    transition: all .4s;
+    color: $dark-three;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#copyright {
+  background-color: $black;
+  p {
+    color: $dark-three;
+  }
+  .text-right {
+    text-align: right;
+  }
+}

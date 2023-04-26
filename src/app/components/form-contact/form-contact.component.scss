@@ -1,0 +1,87 @@
+@import '../../../scss/globals.scss';
+
+form {
+  input, textarea {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid $white;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: $dark-three;
+    letter-spacing: 1px;
+  }
+  button {
+    @include btn-principal;
+  }
+}
+
+#gt-form-contact {
+  background-color: $dark-one;
+  padding: 90px 0;
+  .row-items {
+    align-items: center;
+    .text-contact {
+      h2 {
+        color: $white;
+        text-transform: uppercase;
+      }
+      p {
+        color: $dark-three;
+      }
+    }
+  }
+
+  .gt-red-socials {
+    text-align: center;
+    padding: 80px 0; 
+    justify-content: center;
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: $white;
+      height: 270px;
+      svg {
+        font-size: 40px;
+      }
+      h3 { 
+        font-size: 15px;
+        margin: 20px 0;
+      }
+      a {
+        transition: all .4s;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        color: $white;
+        svg {
+          font-size: 17px;
+          margin: 0 7px;
+        }
+        &:hover {
+          background-color: rgba(255,255,255,0.3);
+        }
+      }
+    }
+    .social-facebook {
+      background-color: #2735b5;
+    }
+    .social-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    .social-twitter {
+      background-color: #3985bd;
+    }
+    .social-linkedin {
+      background-color: #0072b1;
+    }
+    .social-whatsapp {
+      background-color: #25D366;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../../scss/globals.scss';
+
+
+.gt-logos-menu {
+  position: fixed;
+  top: 40px;
+  z-index: 2;
+  width: 100%;
+  @media(max-width:768px){
+    position: relative;
+    top: 0;
+  }
+  .row {
+    align-items: center;
+    padding: 10px 0;
+  }
+  .gt-logo-prin {
+    a {
+      img {
+        width: 55px;
+      }
+    }
+  }
+  .gt-toggle-menu {
+    text-align: right;
+    #toggle-menu {
+      cursor: pointer;
+      color: $dark-three;
+      width: 30px;
+      margin: auto;
+      margin-right: 0;
+      svg {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+#gt-navbar {
+  transition: 0.4s;
+  background-color: $dark-one;
+  box-shadow: -387px 0px 185px 277px rgb(0 0 0 / 77%);
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  right: -2000px;
+  top: 0;
+  z-index: 19;
+  @media(max-width:520px){
+    width: 320px;
+  }
+  @media(min-width:1770px){
+    width: 30%;
+  }
+  #gt-close {
+    cursor: pointer;
+    color: $dark-three;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 99;
+    svg {
+      font-size: 30px;
+    }
+  }
+  .gt-logo {
+    text-align: center;
+    margin-top: 50px;
+    a {
+      img {
+        width: 130px;
+      }
+    }
+  }
+  .gt-items-menu {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    ul {
+      list-style: none;
+      li {
+        padding: 10px 0;
+        a {
+          transition: 0.4s;
+          text-decoration: none;
+          color: $dark-three;
+          cursor: pointer;
+          svg {
+            transition: 0.4s;
+            opacity: 0;
+          }
+
+          &:hover {
+            color: $white;
+            margin-left: 5px;
+            svg {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  hr {
+    color: $dark-three;
+    width: 330px;
+    margin: auto;
+    @media(min-width:1760px){
+      margin-left: 33px;
+    }
+  }
+  .gt-footer-navbar {
+    padding: 35px;
+    p {
+      color: $white;
+      a {
+        transition: 0.4s;
+        text-decoration: none;
+        color: $dark-three;
+        svg {
+          transition: 0.4s;
+          opacity: 0;
+        }
+        &:hover {
+          color: $white;
+          margin-left: 5px;
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Toggle menu */
+.ShowMenu {
+  right: 0px !important;
+}

@@ -1,0 +1,83 @@
+@import '../../../scss/globals.scss';
+
+#gt-projects {
+  background-image: url('../../../assets/img/slider2.jpg');
+  background-position: center -91px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: $white;
+  .capa {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .gt-title-pages {
+    position: relative;
+    margin: auto;
+    h1 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    img {
+      width: 110px;
+      margin: 10px auto;
+    }
+    p {
+      color: $dark-three;
+    }
+  }
+}
+
+#gt-projects-cards {
+  background-color: $dark-one;
+  padding: 70px 0;
+  .title {
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+    }
+    p {
+      color: $dark-three;
+      padding: 0 15%;
+    }
+  }
+  .card-project {
+    border: 1px solid $red-one;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    width: 300px;
+    margin: auto;
+    .image {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      color: $white;
+      padding: 20px 10px;
+    }
+    p {
+      color: $dark-three;
+      font-size: 13px;
+      padding: 0 10px
+    }
+    button {
+      @include btn-secundary;
+    }
+  }
+}
+

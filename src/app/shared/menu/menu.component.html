@@ -1,0 +1,44 @@
+
+<section class="gt-logos-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 gt-logo-prin">
+        <a routerLink="/">
+          <img src="/assets/img/logo-temp.png" alt="">
+        </a>
+      </div>
+      <div class="col-6 gt-toggle-menu">
+        <div id="toggle-menu" (click)="toggleSliseMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- navbar -->
+<nav id="gt-navbar" [ngClass]="toggleMenu ? 'ShowMenu' : ''">
+  <div id="gt-close" (click)="toggleSliseMenu()">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="gt-logo">
+    <a routerLink="/">
+      <img src="/assets/img/logo-temp.png" alt="">
+    </a>
+  </div>
+  <div class="gt-items-menu">
+    <ul>
+      <li><a (click)="navigateUrlPages('/')"><i class="fa-solid fa-arrow-right"></i> Inicio</a></li>
+      <li><a (click)="navigateUrlPages('sobre-mi')"><i class="fa-solid fa-arrow-right"></i> Sobre mi</a></li>
+      <li><a (click)="navigateUrlPages('servicios')"><i class="fa-solid fa-arrow-right"></i> Servicios</a></li>
+      <li><a (click)="navigateUrlPages('proyectos')"><i class="fa-solid fa-arrow-right"></i> Proyectos</a></li>
+      <li><a (click)="navigateUrlPages('contacto')"><i class="fa-solid fa-arrow-right"></i> Contacto</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="gt-footer-navbar">
+    <p>Comunícate:</p>
+    <p><a href="mailto:desarrollo@gtsoftweb.com"><i class="fa-solid fa-arrow-right"></i> desarrollo@gtsoftweb.com</a></p>
+    <p><a href="https://wa.me/573165347875?text=Hola+GtSoftWeb+¡Estoy+interesado+en+tus+servicios!" target="_blank"><i class="fa-solid fa-arrow-right"></i> +57 3165347875</a></p>
+  </div>
+</nav>
